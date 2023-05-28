@@ -1,0 +1,49 @@
+#main-tipos-de-cubos{
+    h1{
+        color:map-get($map:$colores, $key:color-text);
+        background-image: map-get($map:$colores, $key:secundario);
+        margin: 4% 30%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .p-tipos-de-cubos{
+        color:map-get($map:$colores, $key:color-text);
+        background-image: map-get($map:$colores, $key:secundario);
+        text-align: center;
+        margin: 4% 25%;
+        border-radius: 10px;
+    }
+    ol{
+        color: map-get($map:$colores, $key:color-text);
+        background-image: map-get($map:$colores, $key:secundario);
+        width: 20%;
+        height: 37%;
+        margin: 3% 0%;
+        border-radius: 10px;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% 5%;
+        div{
+            background-image: map-get($map:$colores, $key:secundario);
+            border-radius: 10px;
+            width: 35%;
+            overflow: hidden;
+            height: 290px;
+            overflow: hidden;
+            h3{
+                color:map-get($map:$colores, $key:color-text);
+                width: 100%;
+                text-align: center;
+            }
+            p{
+                color:map-get($map:$colores, $key:color-text);
+            }
+        }
+        img{
+            margin: 5% 5%;
+        }
+    }
+}

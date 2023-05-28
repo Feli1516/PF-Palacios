@@ -1,0 +1,86 @@
+body{
+    background-image: map-get($map: $colores, $key: primario);
+}
+#main-index{
+    #bloque1{
+        display: flex;
+        flex-direction: row;
+        .seccion1{
+            color:map-get($map:$colores, $key:color-text);
+            margin: 0% 8%;
+            background-image: map-get($map: $colores, $key: secundario);
+            height: 750px;
+            width: 35%;
+            border-radius: 30px;
+            h1{
+                text-align: center;
+            }
+            img{
+                border-radius: 60px;
+                margin: 5% 17%;
+            }
+            p{
+                text-align: center;
+                margin: 5% 10%;
+            }
+        }
+        .seccion2{
+            color:map-get($map:$colores, $key:color-text);
+            margin: 0% 8%;
+            background-image: map-get($map: $colores, $key: secundario);
+            height: 750px;
+            width: 35%;
+            border-radius: 30px;
+            h2{
+                text-align: center;
+            }
+            .record1{
+                text-align: center;
+                margin: 5% 0%;
+            }
+            .record2{
+                text-align: center;
+                margin: 5% 0%;
+            }
+            iframe{
+                position: relative;
+                top: 0px;
+                left: 65px;
+            }
+            h3{
+                margin: 10px 10px;
+            }
+            a{
+                margin: 20px;
+            }
+        }
+    }
+    .seccion3{
+        background-image: map-get($map: $colores, $key: secundario);
+        border-radius: 50px;
+        width: 75%;
+        height: 400px;
+        color:map-get($map:$colores, $key:color-text);
+        margin: 5% 12%;
+        h3{
+            text-align: center;
+        }
+        ol{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                list-style-type: none;
+                p{
+                    text-align: center;
+                    margin: 5% 0%;
+                }
+                img{
+                    border-radius: 20px;
+                    margin: 0px 100px;
+                }
+            }
+        }
+    }
+}

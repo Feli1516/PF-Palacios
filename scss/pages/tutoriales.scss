@@ -1,0 +1,39 @@
+#main-tutoriales{
+    h2{
+        color:map-get($map:$colores, $key:color-text);
+        background-image: map-get($map:$colores, $key:secundario);
+        text-align: center;
+        margin: 5% 30%;
+        border-radius: 10px;
+    }
+    ol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            display: flex;
+            flex-direction: column;
+            width: 22%;
+            margin: 3% 5%;
+            div{
+                display: flex;
+                justify-content: center;
+                p{
+                    background-image: map-get($map:$colores, $key:terciario);
+                    width: 30%;
+                    height: 30px;
+                    color:map-get($map:$colores, $key:color-text);
+                    text-align: center;
+                    border-radius: 25% 75% 21% 79% / 64% 47% 53% 36%;
+                }
+            }
+        }
+    }
+    h4{
+        color:map-get($map:$colores, $key:color-text);
+        background-image: map-get($map:$colores, $key:secundario);
+        text-align: center;
+        margin: 3% 10%;
+        border-radius: 10px;
+    }
+}
