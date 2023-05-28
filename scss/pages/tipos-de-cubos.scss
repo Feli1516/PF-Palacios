@@ -12,38 +12,54 @@
         text-align: center;
         margin: 4% 25%;
         border-radius: 10px;
+        @include mediaquery-mobile(){
+            margin: 4% 15%;
+        }
     }
     ol{
         color: map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
-        width: 20%;
-        height: 37%;
+        width: 25%;
         margin: 3% 0%;
         border-radius: 10px;
+        @include mediaquery-mobile(){
+            width: 30%;
+        }
     }
     div{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 5% 5%;
-        div{
+        @include flexbox(row, wrap, none, none);
+        margin: 5% 0%;
+        @include mediaquery-mobile(){
+            @include flexbox(column, none, none, none);
+        }
+        h3{
             background-image: map-get($map:$colores, $key:secundario);
-            border-radius: 10px;
+            color:map-get($map:$colores, $key:color-text);
+            width: 100%;
+            text-align: center;
+        }
+        div{
+            @include flexbox(row, none, none, none);
+            p{
+            color:map-get($map:$colores, $key:color-text);
             width: 35%;
-            overflow: hidden;
-            height: 290px;
-            overflow: hidden;
-            h3{
-                color:map-get($map:$colores, $key:color-text);
+            @include mediaquery-mobile(){
                 width: 100%;
                 text-align: center;
+                margin: 0% 5%;
             }
-            p{
-                color:map-get($map:$colores, $key:color-text);
             }
-        }
-        img{
-            margin: 5% 5%;
+            img{
+                width: 22%;
+                position: relative;
+                left: 20%;
+                margin: 5% 0%;
+                @include mediaquery-mobile(){
+                    width: 60%;
+                    position: relative;
+                    left: 20%;
+                }
+            }
         }
     }
 }

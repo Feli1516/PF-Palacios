@@ -3,8 +3,10 @@ body{
 }
 #main-index{
     #bloque1{
-        display: flex;
-        flex-direction: row;
+        @include flexbox(row, none, none, none);
+        @include mediaquery-mobile(){
+            @include flexbox(column, none, none, center);
+        }
         .seccion1{
             color:map-get($map:$colores, $key:color-text);
             margin: 0% 8%;
@@ -12,16 +14,27 @@ body{
             height: 750px;
             width: 35%;
             border-radius: 30px;
+            @include mediaquery-mobile(){
+                width: 75%;
+                margin: 10% 0%;
+            }
             h1{
                 text-align: center;
             }
             img{
-                border-radius: 60px;
+                border-radius: 30px;
                 margin: 5% 17%;
+                @include mediaquery-mobile(){
+                    width: 80%;
+                    margin: 5% 10%;
+                }
             }
             p{
                 text-align: center;
                 margin: 5% 10%;
+                overflow: hidden;
+                height: 39%;
+                overflow: hidden;
             }
         }
         .seccion2{
@@ -31,6 +44,10 @@ body{
             height: 750px;
             width: 35%;
             border-radius: 30px;
+            @include mediaquery-mobile(){
+                width: 75%;
+                margin: 10% 0%;
+            }
             h2{
                 text-align: center;
             }
@@ -45,7 +62,7 @@ body{
             iframe{
                 position: relative;
                 top: 0px;
-                left: 65px;
+                left: 16%;
             }
             h3{
                 margin: 10px 10px;
@@ -62,23 +79,32 @@ body{
         height: 400px;
         color:map-get($map:$colores, $key:color-text);
         margin: 5% 12%;
+        @include mediaquery-mobile(){
+            height: 1050px;
+        }
         h3{
             text-align: center;
         }
         ol{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            @include flexbox(row, wrap, center, center);
+            padding: 0%;
+            @include mediaquery-mobile(){
+                @include flexbox(column, none, none, center);
+            }
             li{
+                @include flexbox(column, none, none, center);
                 list-style-type: none;
+                width: 33%;
+                @include mediaquery-mobile(){
+                    width: 70%;
+                }
                 p{
-                    text-align: center;
                     margin: 5% 0%;
                 }
                 img{
+                    width: 40%;
+                    height: 100px;
                     border-radius: 20px;
-                    margin: 0px 100px;
                 }
             }
         }

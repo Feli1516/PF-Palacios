@@ -2,10 +2,12 @@
     h2{
         color:map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
-        display: flex;
-        justify-content: center;
+        @include flexbox(none, none, center, none);
         margin: 2% 30%;
         border-radius: 10px;
+        @include mediaquery-mobile(){
+            margin: 2% 10%;
+        }
     }
     p{
         color:map-get($map:$colores, $key:color-text);
@@ -15,52 +17,68 @@
     ol{
         color:map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
-        width: 24%;
-        height: 18%;
+        width: 30%;
         border-radius: 10px;
         margin: 5% 2%;
     }
     h4{
         color:map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(none, none, center, center);
         width: 100%;
         height: 9%;
     }
     div{
         color:map-get($map:$colores, $key:color-text);
-        display: flex;
-        flex-direction: row;
+        @include flexbox(row, none, none, none);
         margin: 3% 0%;
+        @include mediaquery-mobile(){
+            @include flexbox(column, none, none, none);
+        }
         p{
             text-align: left;
             width: 50%;
-            height: 25%;
             margin: 5% 2%;
+            @include mediaquery-mobile(){
+                text-align: center;
+                width: 80%;
+                margin: 5% 10%;
+            }
         }
         div{
             width: 25%;
-            display: flex;
-            flex-direction: column;
+            @include flexbox(column, none, none, none);
             position: relative;
             left: 10%;
+            @include mediaquery-mobile(){
+                width: 50%;
+                position: relative;
+                left: 25%;
+            }
             p{
                 width: 100%;
+                margin: 0%;
             }
         }
         ul{
             color:map-get($map:$colores, $key:color-text);
             background-image: map-get($map:$colores, $key:secundario);
-            border-radius: 30px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0%;
+            @include flexbox(row, wrap, none, none);
             li{
-                width: 400px;
-                height: 104;
+                width:50%;
                 font-size: small;
+                margin: 2% 0%;
+                img{
+                    width: 20%;
+                    @include mediaquery-mobile(){
+                        width: 20%;
+                    }
+                }
+                @include mediaquery-mobile(){
+                    width: 100%;
+                }
             }
         }
     }
@@ -72,13 +90,22 @@
         ul{
             background-image: map-get($map:$colores, $key:secundario);
             border-radius: 30px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            @include flexbox(row, wrap, none, none);
             list-style-type: none;
+            padding: 0%;
             li{
-                width: 300px;
+                width: 50%;
                 font-size: small;
+                margin: 2% 0%;
+                img{
+                    width: 20%;
+                    @include mediaquery-mobile(){
+                        width: 30%;
+                    }
+                }
+                @include mediaquery-mobile(){
+                    width: 100%;
+                }
             }
         }
     }
