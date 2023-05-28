@@ -23,9 +23,11 @@
     h4{
         color:map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        height: 7%;
+        height: 9%;
     }
     div{
         color:map-get($map:$colores, $key:color-text);
