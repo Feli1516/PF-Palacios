@@ -26,9 +26,13 @@
                     background-image: map-get($map:$colores, $key:terciario);
                     width: 60%;
                     height: 40px;
+                    padding: 0% 20%;
                     color:map-get($map:$colores, $key:color-text);
                     @include flexbox(none, none, center, center);
                     border-radius: 25% 75% 21% 79% / 64% 47% 53% 36%;
+                    @include mediaquery-mobile(){
+                        padding: 0% 70%;
+                    }
                 }
             }
             iframe{

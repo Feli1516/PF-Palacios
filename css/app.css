@@ -177,9 +177,15 @@ body {
 #main-info .p-info {
   color: beige;
   position: relative;
-  left: 25%;
   width: 50%;
   text-align: center;
+  margin: 0% 25%;
+}
+@media (max-width: 576px) {
+  #main-info .p-info {
+    width: 80%;
+    margin: 0% 10%;
+  }
 }
 #main-info h2 {
   color: beige;
@@ -213,7 +219,6 @@ body {
   #main-info div p {
     width: 80%;
     margin: 0% 10%;
-    text-align: center;
   }
 }
 #main-info div img {
@@ -285,6 +290,7 @@ body {
   background-image: linear-gradient(to left, rgb(161, 55, 129), rgb(255, 0, 64));
   width: 60%;
   height: 40px;
+  padding: 0% 20%;
   color: beige;
   display: flex;
   flex-direction: none;
@@ -292,6 +298,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 25% 75% 21% 79%/64% 47% 53% 36%;
+}
+@media (max-width: 576px) {
+  #main-tutoriales ol li div p {
+    padding: 0% 70%;
+  }
 }
 @media (max-width: 576px) {
   #main-tutoriales ol li iframe {
