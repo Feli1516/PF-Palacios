@@ -7,15 +7,17 @@ body{
         @include mediaquery-mobile(){
             @include flexbox(column, none, none, center);
         }
-        .seccion1{
+        .seccion{
             color:map-get($map:$colores, $key:color-text);
-            margin: 0% 8%;
+            margin: 0% 5%;
             background-image: map-get($map: $colores, $key: secundario);
-            height: 750px;
-            width: 35%;
+            width: 40%;
             border-radius: 30px;
+        }
+        .seccion1{
+            @extend .seccion;
             @include mediaquery-mobile(){
-                width: 75%;
+                width: 80%;
                 margin: 10% 0%;
             }
             h1{
@@ -30,22 +32,13 @@ body{
                 }
             }
             p{
-                text-align: center;
                 margin: 5% 10%;
-                overflow: hidden;
-                height: 39%;
-                overflow: hidden;
             }
         }
         .seccion2{
-            color:map-get($map:$colores, $key:color-text);
-            margin: 0% 8%;
-            background-image: map-get($map: $colores, $key: secundario);
-            height: 750px;
-            width: 35%;
-            border-radius: 30px;
+            @extend .seccion;
             @include mediaquery-mobile(){
-                width: 75%;
+                width: 80%;
                 margin: 10% 0%;
             }
             h2{
@@ -76,12 +69,8 @@ body{
         background-image: map-get($map: $colores, $key: secundario);
         border-radius: 50px;
         width: 75%;
-        height: 400px;
         color:map-get($map:$colores, $key:color-text);
         margin: 5% 12%;
-        @include mediaquery-mobile(){
-            height: 1050px;
-        }
         h3{
             text-align: center;
         }
@@ -95,6 +84,7 @@ body{
                 @include flexbox(column, none, none, center);
                 list-style-type: none;
                 width: 33%;
+                margin: 2% 0%;
                 @include mediaquery-mobile(){
                     width: 70%;
                 }
@@ -103,7 +93,6 @@ body{
                 }
                 img{
                     width: 40%;
-                    height: 100px;
                     border-radius: 20px;
                 }
             }

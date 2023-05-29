@@ -27,7 +27,6 @@
             @include flexbox(column, none, none, none);
         }
         p{
-            color:map-get($map:$colores, $key:color-text);
             width: 30%;
             margin: 2% 0%;
             @include mediaquery-mobile(){

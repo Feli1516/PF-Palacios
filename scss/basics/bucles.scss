@@ -1,0 +1,15 @@
+$color:transparent;
+$colores-bucles:(
+    primero: red,
+    segundo: orange,
+    tercero: green,
+    cuarto: yellow
+);
+
+@each $nombre-color, $color in $colores-bucles{
+    .#{$nombre-color}{
+        color: $color;
+    }
+}
+
+//lo aplico en la pagina info
