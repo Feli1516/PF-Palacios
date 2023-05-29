@@ -19,7 +19,7 @@ header {
 }
 
 footer {
-  background-image: linear-gradient(to left, lightblue, rgb(59, 123, 184));
+  background-image: linear-gradient(to left, rgb(20, 59, 235), rgb(107, 255, 127));
 }
 footer ul {
   display: flex;
@@ -33,11 +33,11 @@ footer ul {
 }
 footer ul p {
   text-align: center;
-  margin: 0%;
+  margin-top: 5%;
 }
 
 body {
-  background-image: linear-gradient(to left, rgb(9, 0, 87), #01172F);
+  background-image: linear-gradient(to top, #02012f, rgb(0, 97, 114), rgb(0, 97, 114), #02012f);
 }
 
 #main-index #bloque1 {
@@ -59,7 +59,7 @@ body {
 #main-index #bloque1 .seccion, #main-index #bloque1 .seccion2, #main-index #bloque1 .seccion1 {
   color: beige;
   margin: 0% 5%;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   width: 40%;
   border-radius: 30px;
 }
@@ -94,11 +94,7 @@ body {
 #main-index #bloque1 .seccion2 h2 {
   text-align: center;
 }
-#main-index #bloque1 .seccion2 .record1 {
-  text-align: center;
-  margin: 5% 0%;
-}
-#main-index #bloque1 .seccion2 .record2 {
+#main-index #bloque1 .seccion2 .records {
   text-align: center;
   margin: 5% 0%;
 }
@@ -107,7 +103,7 @@ body {
   top: 0px;
   left: 16%;
 }
-#main-index #bloque1 .seccion2 h3 {
+#main-index #bloque1 .seccion2 h4 {
   margin: 10px 10px;
 }
 #main-index #bloque1 .seccion2 a {
@@ -115,13 +111,13 @@ body {
   text-decoration: none;
 }
 #main-index .seccion3 {
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   border-radius: 50px;
   width: 75%;
   color: beige;
   margin: 5% 12%;
 }
-#main-index .seccion3 h3 {
+#main-index .seccion3 h2 {
   text-align: center;
 }
 #main-index .seccion3 ol {
@@ -159,14 +155,21 @@ body {
 #main-index .seccion3 ol li p {
   margin: 5% 0%;
 }
-#main-index .seccion3 ol li img {
-  width: 40%;
-  border-radius: 20px;
+#main-index .seccion3 ol li .seccion3-img {
+  width: 45%;
+  border-radius: 25px;
+  padding: 3%;
+}
+#main-index .seccion3 ol li .seccion3-img:hover {
+  border-radius: 15px;
+  padding: 0%;
+  transform: rotate(360deg);
+  transition: transform 0.2s ease;
 }
 
 #main-info h1 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   margin: 4% 25%;
   border-radius: 10px;
   text-align: center;
@@ -180,7 +183,7 @@ body {
 }
 #main-info h2 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   width: 100%;
   height: 6%;
   margin: 5% 0%;
@@ -228,11 +231,11 @@ body {
   }
 }
 
-#main-tutoriales h2 {
+#main-tutoriales h1 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   text-align: center;
-  margin: 5% 30%;
+  margin: 5% 25%;
   border-radius: 10px;
 }
 #main-tutoriales ol {
@@ -279,7 +282,7 @@ body {
   align-items: none;
 }
 #main-tutoriales ol li div p {
-  background-image: linear-gradient(to left, rgb(161, 55, 55), pink);
+  background-image: linear-gradient(to left, rgb(161, 55, 129), rgb(255, 0, 64));
   width: 60%;
   height: 40px;
   color: beige;
@@ -299,7 +302,7 @@ body {
 }
 #main-tutoriales h4 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   text-align: center;
   margin: 3% 10%;
   border-radius: 10px;
@@ -310,14 +313,14 @@ body {
 
 #main-tipos-de-cubos h1 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   margin: 4% 30%;
   border-radius: 10px;
   text-align: center;
 }
 #main-tipos-de-cubos .p-tipos-de-cubos {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   text-align: center;
   margin: 4% 25%;
   border-radius: 10px;
@@ -329,7 +332,7 @@ body {
 }
 #main-tipos-de-cubos ol {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   width: 25%;
   margin: 3% 2%;
   border-radius: 10px;
@@ -359,8 +362,8 @@ body {
     align-items: none;
   }
 }
-#main-tipos-de-cubos div h3 {
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+#main-tipos-de-cubos div h2 {
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   color: beige;
   width: 100%;
   text-align: center;
@@ -398,9 +401,9 @@ body {
   }
 }
 
-.main-fridrich h2 {
+.main-fridrich h1 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   display: flex;
   flex-direction: none;
   flex-wrap: none;
@@ -410,7 +413,7 @@ body {
   border-radius: 10px;
 }
 @media (max-width: 576px) {
-  .main-fridrich h2 {
+  .main-fridrich h1 {
     margin: 2% 10%;
   }
 }
@@ -421,7 +424,7 @@ body {
 }
 .main-fridrich ol {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   width: 30%;
   border-radius: 10px;
   margin: 5% 2%;
@@ -429,9 +432,9 @@ body {
 .main-fridrich ol li a {
   text-decoration: none;
 }
-.main-fridrich h4 {
+.main-fridrich h2 {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   display: flex;
   flex-direction: none;
   flex-wrap: none;
@@ -493,7 +496,7 @@ body {
 }
 .main-fridrich div ul {
   color: beige;
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   list-style-type: none;
   padding: 0%;
   display: flex;
@@ -523,11 +526,11 @@ body {
 .main-fridrich section {
   color: beige;
 }
-.main-fridrich section h5 {
+.main-fridrich section h3 {
   margin: 50px 25px;
 }
 .main-fridrich section ul {
-  background-image: linear-gradient(to left, rgb(42, 42, 110), black);
+  background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
   border-radius: 30px;
   display: flex;
   flex-direction: row;

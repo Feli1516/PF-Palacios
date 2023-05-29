@@ -37,7 +37,7 @@
         @include mediaquery-mobile(){
             @include flexbox(column, none, none, none);
         }
-        h3{
+        h2{
             background-image: map-get($map:$colores, $key:secundario);
             color:map-get($map:$colores, $key:color-text);
             width: 100%;

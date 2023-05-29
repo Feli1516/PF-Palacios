@@ -1,9 +1,9 @@
 #main-tutoriales{
-    h2{
+    h1{
         color:map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
         text-align: center;
-        margin: 5% 30%;
+        margin: 5% 25%;
         border-radius: 10px;
     }
     ol{
