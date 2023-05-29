@@ -20,8 +20,13 @@
         color: map-get($map:$colores, $key:color-text);
         background-image: map-get($map:$colores, $key:secundario);
         width: 25%;
-        margin: 3% 0%;
+        margin: 3% 2%;
         border-radius: 10px;
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
         @include mediaquery-mobile(){
             width: 30%;
         }
@@ -43,6 +48,7 @@
             p{
             color:map-get($map:$colores, $key:color-text);
             width: 35%;
+            margin: 5% 3%;
             @include mediaquery-mobile(){
                 width: 100%;
                 text-align: center;

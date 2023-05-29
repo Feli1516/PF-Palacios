@@ -112,6 +112,7 @@ body {
 }
 #main-index #bloque1 .seccion2 a {
   margin: 20px;
+  text-decoration: none;
 }
 #main-index .seccion3 {
   background-image: linear-gradient(to left, rgb(42, 42, 110), black);
@@ -203,7 +204,7 @@ body {
 }
 #main-info div p {
   width: 30%;
-  margin: 2% 0%;
+  margin: 2% 5%;
 }
 @media (max-width: 576px) {
   #main-info div p {
@@ -303,6 +304,9 @@ body {
   margin: 3% 10%;
   border-radius: 10px;
 }
+#main-tutoriales h4 a {
+  text-decoration: none;
+}
 
 #main-tipos-de-cubos h1 {
   color: beige;
@@ -327,8 +331,11 @@ body {
   color: beige;
   background-image: linear-gradient(to left, rgb(42, 42, 110), black);
   width: 25%;
-  margin: 3% 0%;
+  margin: 3% 2%;
   border-radius: 10px;
+}
+#main-tipos-de-cubos ol li a {
+  text-decoration: none;
 }
 @media (max-width: 576px) {
   #main-tipos-de-cubos ol {
@@ -368,6 +375,7 @@ body {
 #main-tipos-de-cubos div div p {
   color: beige;
   width: 35%;
+  margin: 5% 3%;
 }
 @media (max-width: 576px) {
   #main-tipos-de-cubos div div p {
@@ -417,6 +425,9 @@ body {
   width: 30%;
   border-radius: 10px;
   margin: 5% 2%;
+}
+.main-fridrich ol li a {
+  text-decoration: none;
 }
 .main-fridrich h4 {
   color: beige;
