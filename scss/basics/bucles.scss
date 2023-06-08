@@ -1,8 +1,7 @@
 $colores-bucles:(
     primero: red,
     segundo: orange,
-    tercero: green,
-    cuarto: yellow
+    tercero: green
 );
 
 @each $nombre-color, $color in $colores-bucles{

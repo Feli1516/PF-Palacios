@@ -10,10 +10,6 @@
   color: green;
 }
 
-.cuarto {
-  color: yellow;
-}
-
 header {
   margin: 100px 0px;
 }
@@ -38,6 +34,10 @@ footer ul p {
 
 body {
   background-image: linear-gradient(to top, #02012f, rgb(0, 97, 114), rgb(0, 97, 114), #02012f);
+}
+
+a {
+  color: yellow;
 }
 
 #main-index #bloque1 {
@@ -236,6 +236,10 @@ body {
   }
 }
 
+a {
+  color: yellow;
+}
+
 #main-tutoriales h1 {
   color: beige;
   background-image: linear-gradient(to left, rgb(119, 0, 99), rgb(170, 0, 0));
@@ -320,6 +324,10 @@ body {
 }
 #main-tutoriales h4 a {
   text-decoration: none;
+}
+
+a {
+  color: yellow;
 }
 
 #main-tipos-de-cubos h1 {
@@ -410,6 +418,10 @@ body {
     position: relative;
     left: 20%;
   }
+}
+
+a {
+  color: yellow;
 }
 
 .main-fridrich h1 {

@@ -1,6 +1,7 @@
 body{
     background-image: map-get($map: $colores, $key: primario);
 }
+a { color: yellow; }
 #main-index{
     #bloque1{
         @include flexbox(row, none, none, none);
